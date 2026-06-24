@@ -17,7 +17,7 @@ import com.cws.shop.service.AdminDashboardService;
 
 @RestController
 @RequestMapping("/admin/dashboard/products")
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "https://lemon-bay-07b78eb00.7.azurestaticapps.net")
 public class AdminDashboardController {
 	private final AdminDashboardService adminDashboardService;
 
