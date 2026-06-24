@@ -8,7 +8,7 @@
   }
 
   try {
-    const response = await fetch("http://localhost:8081/auth/me", {
+    const response = await fetch("https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net/auth/me", {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -58,7 +58,7 @@ async function logout() {
     localStorage.getItem("token") || sessionStorage.getItem("token");
 
   try {
-    await fetch("http://localhost:8081/auth/logout", {
+    await fetch("https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net/auth/logout", {
       method: "POST",
       headers: {
         Authorization: "Bearer " + token,

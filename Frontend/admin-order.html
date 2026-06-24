@@ -875,7 +875,7 @@
     /* ================================================
        CONFIG
     ================================================ */
-    const NOTIF_BASE = window.API_BASE_URL || 'http://localhost:8081';
+    const NOTIF_BASE = window.API_BASE_URL || 'https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net';
     const API_URL    = NOTIF_BASE + '/api/admin/orders';
 
     /* ================================================
@@ -1221,7 +1221,7 @@
         if (minAmount)                   params.append('minAmount', minAmount);
         if (maxAmount)                   params.append('maxAmount', maxAmount);
 
-        const BASE = window.API_BASE_URL || 'http://localhost:8081';
+        const BASE = window.API_BASE_URL || 'https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net';
         const res  = await fetch(`${BASE}/api/admin/orders/filter?${params.toString()}`,
           { headers: { 'Authorization': 'Bearer ' + token } });
 

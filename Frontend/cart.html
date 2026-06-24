@@ -1723,7 +1723,7 @@ ALL RIGHTS RESERVED
 
     
 
-    var API = 'http://localhost:8081';
+    var API = 'https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net';
 
     /* ── hamburger ── */
     document.getElementById('menuToggle').onclick = function () {
@@ -2106,7 +2106,7 @@ async function updateCartCount() {
     try {
 
         const response = await fetch(
-            "http://localhost:8081/api/cart/getcart",
+            "https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net/api/cart/getcart",
             {
                 headers: {
                     "Authorization": "Bearer " +

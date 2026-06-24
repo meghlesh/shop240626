@@ -4088,7 +4088,7 @@ nav.classList.toggle("active");
 <div class="toast-wrap" id="toastWrap"></div>
 
 <script>
-  var API = 'http://localhost:8081';
+  var API = 'https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net';
 
   /*
     Cache of products currently rendered on this page, keyed by id.
@@ -4265,7 +4265,7 @@ async function updateCartCount() {
     try {
         if (isLoggedIn()) {
             const response = await fetch(
-                "http://localhost:8081/api/cart/getcart",
+                "https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net/api/cart/getcart",
                 {
                     headers: {
                         "Authorization": "Bearer " +
@@ -4326,7 +4326,7 @@ async function loadFeaturedProducts() {
     try {
 
         const response = await fetch(
-            "http://localhost:8081/public/products/top"
+            "https://api-shop-be-bfdgh8fgbzhcfmhb.southindia-01.azurewebsites.net/public/products/top"
         );
 
         const result = await response.json();
